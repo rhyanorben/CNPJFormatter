@@ -24,6 +24,12 @@ def corrigir_cnpj_e_mostrar():
 root = tk.Tk()
 root.title("CNPJ Formatter")
 
+# Define o tamanho da janela (largura x altura)
+root.geometry("250x150")
+
+# Impede o redimensionamento da janela
+root.resizable(False, False)
+
 # Label e Entry para entrada do CNPJ incorreto
 label_incorreto = tk.Label(root, text="Digite o CNPJ incorreto:")
 label_incorreto.pack(pady=10)
@@ -36,7 +42,7 @@ entry_correto.pack(pady=10)
 
 # Botão para corrigir o CNPJ
 button = tk.Button(root, text="Corrigir CNPJ", command=corrigir_cnpj_e_mostrar)
-button.pack(pady=20)
+button.pack(pady=10)
 
 # Inicia o loop da interface gráfica
 root.mainloop()
