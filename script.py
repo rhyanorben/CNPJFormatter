@@ -30,6 +30,9 @@ root.geometry("250x150")
 # Impede o redimensionamento da janela
 root.resizable(False, False)
 
+# Adicionar ícone ao programa
+root.iconbitmap("/cnpj.ico")
+
 # Label e Entry para entrada do CNPJ incorreto
 label_incorreto = tk.Label(root, text="Digite o CNPJ incorreto:")
 label_incorreto.pack(pady=10)
